@@ -209,9 +209,9 @@
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-widget">
                             <h3>get in touch</h3>
-                            @*<p> @Html.Raw(layoutService.GetSettings().Adress) </p>
-                                <p>@layoutService.GetSettings().FooterPhone</p>
-                                <p>@layoutService.GetSettings().Email<br>@layoutService.GetSettings().OurWeb</p>*@
+                            <p>@settings.First(s=> s.Key == "FooAdress").Value"</p>
+                                <p>@settings.First(s=> s.Key == "FooPhone").Value"</p>
+                                   <p>@settings.First(s=> s.Key == "FooEmail").Value"</p>
                         </div>
                     </div>
                 </div>
